@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.7'
+}
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.+'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.+'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.+'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.+'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+javafx {
+    version = "11.0.2"
+    modules = ['javafx.controls', 'javafx.fxml']
+}

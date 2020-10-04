@@ -1,0 +1,36 @@
+.blueButton {
+    -fx-background-color: rgba(0, 0, 128, 0.7);
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 30;
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-background-color: rgba(0, 0, 128, 0.7);
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 30;
+    -fx-alignment: center
+}
+
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal{
+    -fx-background-color:transparent;
+}
+.scroll-bar:horizontal .track
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb{
+    -fx-background-color: rgba(0, 0, 128, 0.3);
+    -fx-background-radius: 4em;
+}
+
+.scroll-bar:horizontal .increment-arrow, .decrement-arrow {
+ -fx-background-color: transparent;
+}
